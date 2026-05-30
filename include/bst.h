@@ -104,7 +104,7 @@ class BST {
   std::vector<std::pair<T, int>> getAllSortedByFrequency() const {
     std::vector<std::pair<T, int>> vec;
     collectAll(root, vec);
-    
+
     std::sort(vec.begin(), vec.end(),
       [](const std::pair<T, int>& a, const std::pair<T, int>& b) {
         if (a.second != b.second) {
@@ -112,7 +112,7 @@ class BST {
         }
         return a.first < b.first;
       });
-    
+
     return vec;
   }
 
