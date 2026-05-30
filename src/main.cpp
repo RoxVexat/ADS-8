@@ -12,7 +12,7 @@ int main() {
   makeTree(tree, "src/war_peace.txt");
 
   std::cout << "Tree depth: " << tree.depth() << std::endl;
-    
+  std::cout << std::endl;
   printFreq(tree);
 
   return 0;
